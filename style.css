@@ -331,13 +331,13 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 
 @media screen and (max-width: 360px){
     .nav-gauche{
-        width: 400px;
+        width: 450px;
         height: 400px;
-        min-height: 500px;
+        min-height: 490px;
         background: rgb(233, 135, 156);
         border-radius: 50%;
         position: fixed;
-        left: -400px!important;
+        left: -450px!important;
         top: -200px;
         z-index: 1;
         transition: all 0.2s ease-in-out;
@@ -345,20 +345,36 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
     .cont-bloc {
         height: 250px;
         position: absolute;
-        left: 410px;
-        top: 400px;
+        left: 260px;
+        top: 200px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
     .menu-visible {
-        left: -200px!important;
+        left: -225px!important;
     }
     .cont-bloc span {
-        font-size: 25px;
+        font-size: 20px;
     } 
     .btn-rond-menu {
         width: 60px;
         height: 60px;
+        top: 2px;
+        left: 2px;
+    }
+    .accueil{
+        top: -50px;
+        left: -280px;
+    }
+    .pdp {
+        margin-top: 20px;
+        margin-left: -10px;
+        width: 250px;
+        height: 250px;
+    }
+    .btn-rond {
+        bottom: -100px;
+        left: -50px;
     }
 }
