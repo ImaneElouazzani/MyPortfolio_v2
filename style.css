@@ -10,23 +10,11 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(-45deg, #f7a0ca, #d6a7a7, #c2aff7, #f4b5cd);
-	background-size: 200% 200%;
-	animation: gradient 10s ease infinite;
+    background: rgb(194,242,225);
+background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba(220,163,238,0.6699054621848739) 49%, rgba(247,102,168,0.31976540616246496) 100%);
 	height: 100vh;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
 
 /* Section Menu*/
 
@@ -92,6 +80,7 @@ body {
 
 .accueil {
     width: 80%;
+    height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -179,4 +168,197 @@ body {
 
 .logo-btn-rond-acc {
     width: 35px;
+}
+
+/* 1200px 900px 400px*/
+
+/* Medias queries accueil*/
+@media screen and (max-width: 1200px) {
+    .pdp {
+        margin-left: 100px;
+    }
+    .nav-gauche{
+    width: 1000px;
+    height: 1000px;
+    min-height: 500px;
+    background: rgb(233, 135, 156);
+    border-radius: 50%;
+    position: fixed;
+    left: -1000px!important;
+    top: -500px;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+    }
+    .cont-bloc {
+        height: 600px;
+        position: absolute;
+        left: 590px;
+        top: 590px;
+    }
+    .menu-visible {
+        left: -500px!important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .accueil{
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .pdp{
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 800px) {
+    
+    .accueil{
+        width: 100%;
+        left: -100px;
+        padding-top: 0px;
+    }
+    .text-animation {
+        font-size: 45px;
+    }
+    .pdp {
+        width: 300px;
+        height: 300px;
+    }
+    .btn-rond-menu {
+        width: 100px;
+        height: 100px;
+    }
+    .btn-rond {
+        left: 120px;
+        width: 60px;
+        height: 60px;
+    }
+    .logo-btn-rond-acc {
+        width: 25px;
+    }
+}
+@media screen and (max-width: 550px) {
+    
+    .accueil{
+        left: -200px;
+        top: 50px;
+    }
+    .pdp{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .btn-rond {
+        left: 220px;
+        bottom: 40px;
+        width: 55px;
+        height: 55px;
+    }
+    .nav-gauche{
+        width: 800px;
+        height: 800px;
+        min-height: 500px;
+        background: rgb(233, 135, 156);
+        border-radius: 50%;
+        position: fixed;
+        left: -800px!important;
+        top: -400px;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+        }
+    .cont-bloc {
+        height: 250px;
+        position: absolute;
+        left: 480px;
+        top: 460px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .menu-visible {
+        left: -400px!important;
+    }
+    .cont-bloc span {
+        font-size: 25px;
+    } 
+    .btn-rond-menu {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .text-animation {
+        font-size: 35px;
+    }
+    .accueil{
+        top: -20px;
+    }
+    .pdp {
+        margin-top: 30px;
+        margin-left: -40px;
+    }
+    .nav-gauche{
+        width: 700px;
+        height: 700px;
+        min-height: 500px;
+        background: rgb(233, 135, 156);
+        border-radius: 50%;
+        position: fixed;
+        left: -700px!important;
+        top: -350px;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+        }
+    .cont-bloc {
+        height: 250px;
+        position: absolute;
+        left: 410px;
+        top: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .menu-visible {
+        left: -350px!important;
+    }
+    .cont-bloc span {
+        font-size: 25px;
+    } 
+    .btn-rond {
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .nav-gauche{
+        width: 400px;
+        height: 400px;
+        min-height: 500px;
+        background: rgb(233, 135, 156);
+        border-radius: 50%;
+        position: fixed;
+        left: -400px!important;
+        top: -200px;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+        }
+    .cont-bloc {
+        height: 250px;
+        position: absolute;
+        left: 410px;
+        top: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .menu-visible {
+        left: -200px!important;
+    }
+    .cont-bloc span {
+        font-size: 25px;
+    } 
+    .btn-rond-menu {
+        width: 60px;
+        height: 60px;
+    }
 }
