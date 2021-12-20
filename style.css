@@ -374,7 +374,113 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
         height: 250px;
     }
     .btn-rond {
-        bottom: -100px;
-        left: -50px;
+        bottom: -20px;
+        left: 280px;
     }
+}
+
+/* Section a prpos */
+
+.propos{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.cont-propos{
+    width: 80%;
+    height: 80%;
+    min-height: 50%;
+    background: #efabf3;
+    border-radius: 5px 200px;
+    align-self:center ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.description{
+    width: 90%;
+    font-size: 25px;
+    align-self:center ;
+    margin-top: 30px;
+}
+.cont-exp-travail {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.barre-verticale {
+    height: 300px;
+    width: 5px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    left: -30px;
+}
+
+.boule-ico {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boule-ico img {
+    width: 50px;
+    border-radius: 30px;
+}
+
+.flex-cont-bloc-exp {
+    width: 800px;
+    flex-shrink: 1;
+    position: relative;
+}
+
+.bloc {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 37.5px;
+    cursor: pointer;
+    border: 1px solid rgb(148, 140, 140);
+    position: relative;
+}
+
+.contenu-bloc {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(56, 54, 54);
+    background: rgb(246, 236, 236);
+    transition: transform 0.25 ease-in-out;
+    position: relative;
+    transform: translate(10px, -10px);
+}
+
+.contenu-bloc:hover {
+    transform: translate(0,0)
+}
+
+.bloc1 {
+    background:  rgba(153, 243, 239, 0.904);
+}
+
+.bloc2 {
+    background:  rgba(236, 245, 116, 0.904);
+}
+.titre-section-bloc {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.txt-section {
+    font-size: 20px;
 }
