@@ -688,3 +688,53 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
         height: 380px;
     }
 }
+
+/* Compétences */
+
+.competence {
+    margin-top: 200px;
+    width: 100%;
+}
+.typing {
+        width: 350px!important;
+        height: 120px!important;
+        position: relative;
+        bottom: -50px;
+    
+}
+.svg{
+    width: 200px;
+    height: 200px;
+    margin-right: 90px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.svg1{
+    width: 400px;
+    height: 400px;
+    margin-right: 50px;
+}
+.title {
+    font-size: 30px;
+    margin-left:50px;
+}
+#php {
+    position: relative;
+    bottom: -80px;
+}
+/* media queries */
+
+@media screen and (max-width: 920px) {
+    .svg{
+        width: 200px;
+        height: 200px;
+        margin-right: 0px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    .svg1{
+        width: 300px;
+        height: 300px;
+        margin-right: 0px;
+    }
+}
