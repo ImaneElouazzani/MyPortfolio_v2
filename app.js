@@ -8,10 +8,10 @@ let typewriter = new Typewriter(txtAnim, {
 })
 
 typewriter
-.typeString('<span style="color:#0faa93;">S</span>')
+.typeString('<span style="color:#154d89;">S</span>')
 .typeString('<span style="color:#a80d7c;">a</span>')
 .typeString('<span style="color:#e2b11d;">l</span>')
-.typeString('<span style="color:#f95b11;">u</span>')
+.typeString('<span style="color:#8fc4a3;">u</span>')
 .typeString('<span style="color:#51a83f;">t,</span><br>')
 .typeString('<span style="color:#e05066;">c\'</span>')
 .typeString('<span style="color:#717bc6;">e</span>')
