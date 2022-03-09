@@ -79,16 +79,16 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 /* Section Accueil */
 
 .accueil {
-    width: 80%;
+    width: 90%;
     height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
     padding-top:80px;
-    padding-left: 300px;
+    padding-left: 200px;
 }
 .pdp {
-    width: 300px;
+    width: 250px;
     height: 300px;
     border-radius: 30%;
     margin-left: 200px;
@@ -99,6 +99,7 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
     font-size: 40px;
     letter-spacing: 1px;
     padding-top: 100px;
+    width: 400px;
 }
 
 /*--------Navigation--------*/
@@ -703,25 +704,43 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
         bottom: -50px;
     
 }
+
 .svg{
-    width: 200px;
-    height: 200px;
-    margin-right: 90px;
+    width: 100px;
+    height: 100px;
+    margin-right: 120px;
     margin-top: 100px;
     margin-bottom: 50px;
+    margin-left: 10px;
 }
 .svg1{
-    width: 400px;
-    height: 400px;
-    margin-right: 50px;
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 .title {
     font-size: 30px;
-    margin-left:50px;
+    margin-left:30px;
+}
+.title1{
+    font-size: 30px;
+    margin-left: 10px;
 }
 #php {
     position: relative;
-    bottom: -80px;
+    bottom: -35px;
+}
+#redux{
+    position: relative;
+    top: -20px;
+}
+#redx{
+    margin-left: 20px;
+}
+#npm{
+    position: relative;
+    bottom: -50px;
 }
 /* media queries */
 
@@ -749,6 +768,27 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
     bottom: -100px
 }
 .contact {
-    margin-top: 200px;
+   
     width: 100%;
+    height: 600px;
+}
+.titre-contact{
+    position: relative;
+    top:-100px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(31, 32, 32);
+}
+.link-contact{
+    width: 150px;
+}
+.linkedin{
+    width: 120px;
+}
+.cont-container{
+    width: 600px;
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
 }
