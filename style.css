@@ -90,9 +90,10 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 .pdp {
     width: 250px;
     height: 300px;
-    border-radius: 30%;
+    border-radius: 50%;
     margin-left: 200px;
     margin-top: 100px;
+    
 }
 .text-animation {
     font-family: 'Abril Fatface', sans-serif;
@@ -179,59 +180,60 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
         margin-left: 100px;
     }
     .nav-gauche{
-    width: 1000px;
-    height: 1000px;
+    width: 800px;
+    height: 800px;
     min-height: 500px;
     background: rgb(233, 135, 156);
     border-radius: 50%;
     position: fixed;
-    left: -1000px!important;
-    top: -500px;
+    left: -800px!important;
+    top: -400px;
     z-index: 1;
     transition: all 0.2s ease-in-out;
     }
     .cont-bloc {
-        height: 600px;
+        height: 500px;
         position: absolute;
-        left: 590px;
-        top: 590px;
+        left: 480px;
+        top: 450px;
     }
     .menu-visible {
-        left: -500px!important;
+        left: -400px!important;
     }
 }
 
 @media screen and (max-width: 1000px) {
     
     .accueil{
-        flex-direction: column;
-        padding-top: 100px;
-    }
-    .pdp{
-        margin-top: 50px;
-        margin-left: 0px;
+        padding-left: 50px;
     }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     
     .accueil{
-        width: 100%;
-        left: -100px;
-        padding-top: 0px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .text-animation {
-        font-size: 45px;
+        font-size: 30px;
+        padding-top: 20px;
     }
     .pdp {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 250px;
+        margin-top: 20px;
+        margin-left: 0px;
     }
     .btn-rond-menu {
         width: 100px;
         height: 100px;
     }
     .btn-rond {
-        left: 120px;
+        left: 20px;
+        bottom: 20px;
         width: 60px;
         height: 60px;
     }
@@ -241,46 +243,36 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 }
 @media screen and (max-width: 550px) {
     
-    .accueil{
-        left: -200px;
-        top: 50px;
-    }
-    .pdp{
-        margin-top: 0px;
-        margin-left: 0px;
-    }
     .btn-rond {
-        left: 220px;
-        bottom: 40px;
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
     }
     .nav-gauche{
-        width: 800px;
-        height: 800px;
+        width: 600px;
+        height: 600px;
         min-height: 500px;
         background: rgb(233, 135, 156);
         border-radius: 50%;
         position: fixed;
-        left: -800px!important;
-        top: -400px;
+        left: -600px!important;
+        top: -300px;
         z-index: 1;
         transition: all 0.2s ease-in-out;
         }
     .cont-bloc {
-        height: 250px;
+        height: 200px;
         position: absolute;
-        left: 480px;
-        top: 460px;
+        left: 360px;
+        top: 340px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
     .menu-visible {
-        left: -400px!important;
+        left: -300px!important;
     }
     .cont-bloc span {
-        font-size: 25px;
+        font-size: 20px;
     } 
     .btn-rond-menu {
         width: 80px;
@@ -289,96 +281,53 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 }
 @media screen and (max-width: 480px) {
     .text-animation {
-        font-size: 35px;
+        font-size: 25px;
+        width: 200px;
     }
-    .accueil{
-        top: -20px;
+    .pdp{
+        width: 180px;
+        height: 200px;
     }
-    .pdp {
-        margin-top: 30px;
-        margin-left: -40px;
+    .btn-rond-menu {
+        width: 60px;
+        height: 60px;
     }
     .nav-gauche{
-        width: 700px;
-        height: 700px;
+        width: 500px;
+        height: 500px;
         min-height: 500px;
         background: rgb(233, 135, 156);
         border-radius: 50%;
         position: fixed;
-        left: -700px!important;
-        top: -350px;
+        left: -500px!important;
+        top: -250px;
         z-index: 1;
         transition: all 0.2s ease-in-out;
         }
     .cont-bloc {
-        height: 250px;
+        height: 200px;
         position: absolute;
-        left: 410px;
-        top: 400px;
+        left: 300px;
+        top: 270px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
     .menu-visible {
-        left: -350px!important;
+        left: -250px!important;
     }
     .cont-bloc span {
-        font-size: 25px;
-    } 
+        font-size: 15px;
+    }
+    .accueil{
+        padding-top: 0px;
+    }
     .btn-rond {
-        bottom: 0px;
+        width: 40px;
+        height: 40px;
     }
 }
 
-@media screen and (max-width: 360px){
-    .nav-gauche{
-        width: 450px;
-        height: 400px;
-        min-height: 490px;
-        background: rgb(233, 135, 156);
-        border-radius: 50%;
-        position: fixed;
-        left: -450px!important;
-        top: -200px;
-        z-index: 1;
-        transition: all 0.2s ease-in-out;
-        }
-    .cont-bloc {
-        height: 250px;
-        position: absolute;
-        left: 260px;
-        top: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .menu-visible {
-        left: -225px!important;
-    }
-    .cont-bloc span {
-        font-size: 20px;
-    } 
-    .btn-rond-menu {
-        width: 60px;
-        height: 60px;
-        top: 2px;
-        left: 2px;
-    }
-    .accueil{
-        top: -50px;
-        left: -280px;
-    }
-    .pdp {
-        margin-top: 20px;
-        margin-left: -10px;
-        width: 250px;
-        height: 250px;
-    }
-    .btn-rond {
-        bottom: -20px;
-        left: 280px;
-    }
-}
 
 /* Section a prpos */
 
