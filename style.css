@@ -328,19 +328,50 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
     }
 }
 
+@media screen and (max-width: 350px) {
+    
+    .nav-gauche{
+        width: 400px;
+        height: 400px;
+        min-height: 400px;
+        background: rgb(233, 135, 156);
+        border-radius: 50%;
+        position: fixed;
+        left: -400px!important;
+        top: -200px;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+        }
+    .cont-bloc {
+        height: 130px;
+        position: absolute;
+        left: 260px;
+        top: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .menu-visible {
+        left: -200px!important;
+    }
+    .cont-bloc span {
+        font-size: 12px;
+    }
+}
 
 /* Section a prpos */
 
 .propos{
     width: 100%;
     height: 1000px;
-    margin-top: 200px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
+    padding-top: 150px;
 }
 .cont-propos{
     width: 80%;
-    height: 80%;
+    height: 1000px;
     min-height: 50%;
     background: #efabf3;
     border-radius: 5px 200px;
@@ -363,7 +394,7 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 }
 
 .barre-verticale {
-    height: 300px;
+    height: 400px;
     width: 5px;
     background: black;
     display: flex;
@@ -398,7 +429,7 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 
 .bloc {
     width: 100%;
-    height: 200px;
+    height: 250px;
     margin-bottom: 37.5px;
     cursor: pointer;
     border: 1px solid rgb(148, 140, 140);
@@ -445,74 +476,269 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 }
 
 @media screen and (max-width: 1220px) {
-    .propos{
-        height: 1300px;
-    }
     .barre-verticale {
-        height: 400px;
+        height: 500px;
         
     }
     .bloc {
-        width: 70%;
-        height: 300px;
+        width: 80%;
+        height: 350px;
     }
     .cont-exp-travail{
         margin-left: 150px;
+    }
+    .propos{
+        height: 1500px;
+    }
+    .cont-propos {
+        height: 1200px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .propos {
+        height: 2000px;
+    }
+    .barre-verticale {
+        height: 500px;
+        
+    }
+    .bloc {
+        width: 80%;
+        height: 400px;
+    }
+    .cont-propos {
+        height: 1400px;
     }
 }
 
 @media screen and (max-width: 900px){
     .propos {
+        height: 2000px;
+    }
+    .barre-verticale {
+        height: 620px;
+        
+    }
+    .bloc {
+        width: 85%;
+        height: 450px;
+    }
+    .cont-propos {
         height: 1500px;
     }
 }
-@media screen and (max-width: 750px){
+@media screen and (max-width: 830px){
     .propos {
         height: 1800px;
     }
     .cont-propos {
-        width: 100%;
+        height: 1600px;
     }
     .barre-verticale {
-        height: 600px;
+        height: 720px;
         
     }
     .bloc {
-        width: 70%;
-        height: 400px;
+        width: 80%;
+        height: 450px;
     }
     .description{
         font-size: 20px;
     }
+    #b13{
+        height: 550px;
+    }
 }
-@media screen and (max-width: 570px){
+@media screen and (max-width: 781px){
+    .propos {
+        height: 1800px;
+    }
+    .cont-propos {
+        height: 1800px;
+    }
+    .barre-verticale {
+        height: 720px;
+        
+    }
+    .bloc {
+        width: 80%;
+        height: 550px;
+    }
+    .description{
+        font-size: 20px;
+    }
+    #b13{
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 705px){
+    .propos {
+        height: 1800px;
+    }
+    .cont-propos {
+        height: 1600px;
+    }
+    .barre-verticale {
+        height: 800px;
+        
+    }
+    .bloc {
+        width: 80%;
+        height: 450px;
+    }
+    .description{
+        font-size: 18px;
+    }
+    #b13{
+        height: 550px;
+    }
+    .txt-section{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 670px){
     .cont-exp-travail{
         margin-left: 70px;
     }
     .bloc {
         width: 80%;
     }
+    .propos{
+        height: 2000px;
+    }
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width: 560px){
+    
     .cont-propos {
-        height: 1700px;
+        height: 2000px;
+    }
+    
+    .bloc {
+        width: 80%;
+        height: 600px;
+    }
+    
+    #b13{
+        height: 700px;
+    }
+    
+}
+@media screen and (max-width: 490px){
+    .propos{
+        height: 2300px;
+    }
+    .cont-propos {
+        height: 2100px;
         border-radius: 5px 100px;
     }
     .bloc {
-        height: 500px;
+        height: 620px;
+    }
+    #b13{
+        height: 820px;
+    }
+    .barre-verticale{
+        height: 1000px;
     }
 }
-@media screen and (max-width: 340px){
+@media screen and (max-width: 460px){
     .cont-propos {
-        height: 2200px;
+        height: 2300px;
         border-radius: 5px 80px;
     }
     .bloc {
         height: 700px;
     }
-    
+    #b13{
+        height: 880px;
+    }
+    .propos{
+        height: 2500px;
+    }
 }
-
+@media screen and (max-width: 430px){
+    .cont-propos {
+        height: 2200px;
+        border-radius: 5px 80px;
+    }
+    .bloc {
+        height: 630px;
+        width: 90%;
+    }
+    #b13{
+        height: 800px;
+    }
+    .propos{
+        height: 2800px;
+    }
+    .barre-verticale{
+        display: none;
+    }
+    .cont-exp-travail {
+    margin-left: 35px;
+    }
+}
+@media screen and (max-width: 380px){
+    .cont-propos {
+        height: 2400px;
+        border-radius: 5px 80px;
+    }
+    .bloc {
+        height: 700px;
+        width: 90%;
+    }
+    #b13{
+        height: 820px;
+    }
+    .propos{
+        height: 2800px;
+    }
+    .barre-verticale{
+        display: none;
+    }
+    .cont-exp-travail {
+    margin-left: 25px;
+    }
+}
+@media screen and (max-width: 355px){
+    .cont-propos {
+        height: 2500px;
+    }
+    #b13{
+        height: 900px;
+    }
+}
+@media screen and (max-width: 340px){
+    .cont-propos {
+        height: 2900px;
+    }
+    #b13{
+        height: 1000px;
+    }
+    .bloc{
+        height: 900px;
+    }
+    .propos{
+        height: 3000px;
+    }
+}
+@media screen and (max-width: 300px){
+    .cont-propos {
+        height: 3000px;
+    }
+    #b13{
+        height: 1100px;
+    }
+    .bloc{
+        height: 920px;
+    }
+    .propos{
+        height: 3000px;
+    }
+}
 /* Portfolio */
 
 .portfolio {
