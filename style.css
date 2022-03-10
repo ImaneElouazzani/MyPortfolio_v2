@@ -748,7 +748,6 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 
 .titre-port {
     text-align: center;
-    padding: 50px 0;
     font-size: 50px;
     color: rgb(31, 32, 32);
 }
@@ -869,7 +868,6 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 /* Compétences */
 
 .competence {
-    margin-top: 200px;
     width: 100%;
 }
 .typing {
@@ -919,19 +917,32 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 }
 /* media queries */
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 550px) {
     .svg{
-        width: 200px;
-        height: 200px;
-        margin-right: 0px;
-        margin-top: 100px;
-        margin-bottom: 20px;
+        width: 80px;
+        margin-left: 23px;
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+    .typing{
+        display: none;
     }
     .svg1{
-        width: 300px;
-        height: 300px;
-        margin-right: 0px;
+        width: 160px;
     }
+    .title {
+        font-size: 25px;
+        margin-left:30px;
+    }
+    .title1{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    #redux{
+        position: relative;
+        top: 0px;
+    }
+    
 }
 
 /* section mails */
@@ -943,7 +954,7 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
     bottom: -100px
 }
 .contact {
-   
+    margin-top: 200px;
     width: 100%;
     height: 600px;
 }
@@ -955,15 +966,82 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
     color: rgb(31, 32, 32);
 }
 .link-contact{
-    width: 150px;
+    width: 130px;
 }
 .linkedin{
-    width: 120px;
+    width: 110px;
 }
 .cont-container{
     width: 600px;
-    margin-left: 300px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between ;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 900px) {
+    .titre-contact{
+        position: relative;
+        top:-100px;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(31, 32, 32);
+    }
+    .mail {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        bottom: -80px
+    }
+    .link-contact{
+        width: 100px;
+    }
+    .linkedin{
+        width: 90px;
+    }
+    .box{
+        padding-left: 30px;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .cont-container{
+        width: 300px;
+    }
+    .link-contact{
+        margin-right: 30px;
+        margin-bottom: 50px;
+    }
+    .linkedin{
+        position : relative;
+        top: -20px;
+        left: -20px
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mail{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .titre-contact{
+        font-size: 23px;
+    }
+    .cont-container{
+        width: 100px;
+    }
+    .linkedin{
+        position : relative;
+        left: 5px;
+        width: 70px;
+    }
+    .link-contact{
+        width: 90px;
+        margin-bottom: 20px;
+    }
 }
