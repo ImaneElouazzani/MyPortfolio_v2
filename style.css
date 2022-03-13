@@ -868,7 +868,8 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 /* Compétences */
 
 .competence {
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 .typing {
         width: 350px!important;
@@ -878,7 +879,27 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
     
 }
 
+.comp{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 20px;
+    justify-content: center;
+}
+.card{
+    height: 200px;
+}
 .svg{
+    width: 100px;
+    height: 100px;
+}
+
+.svg1{
+    width: 200px;
+    height: 200px;
+}
+/* .svg{
     width: 100px;
     height: 100px;
     margin-right: 120px;
@@ -914,7 +935,7 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 #npm{
     position: relative;
     bottom: -50px;
-}
+} */
 /* media queries */
 
 @media screen and (max-width: 550px) {
