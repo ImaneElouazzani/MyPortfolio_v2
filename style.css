@@ -175,6 +175,100 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 /* 1200px 900px 400px*/
 
 /* Medias queries accueil*/
+
+@media screen and (min-width: 1400px){
+    .accueil{
+        padding-top: 150px;
+        width: 100%;
+        padding-left: 0px;
+    }
+    .text-animation {
+        font-size: 50px;
+        letter-spacing: 1px;
+        padding-top: 200px;
+        width: 500px;
+    }
+    .pdp {
+        width: 300px;
+        height: 350px;
+        border-radius: 50%;
+        margin-top: 200px;
+    }
+    .nav-gauche{
+        width: 1000px;
+        height: 1000px;
+        min-height: 500px;
+        left: -1000px!important;
+        top: -500px;
+        }
+        .cont-bloc {
+            height: 700px;
+            position: absolute;
+            left: 600px;
+            top:550px;
+        }
+        .menu-visible {
+            left: -500px!important;
+        }
+        .blocs-menu span {
+            font-size: 27px;
+        }
+}
+
+@media screen and (min-width: 1800px){
+    .btn-rond-menu {
+        width: 120px;
+        height: 120px;
+        top: 20px;
+        left: 20px;
+    }
+   .line-unique {
+        width: 60%;
+        height: 10px;}
+    .line-unique::before {
+           bottom: 20px;
+           height: 10px;
+        }
+    .line-unique::after {
+            top: 20px;
+            height: 10px;
+         }
+    .btn-rond {
+        width: 80px;
+        height: 80px;}
+    
+    .text-animation {
+        font-size: 70px;
+        letter-spacing: 1px;
+        padding-top: 100px;
+        width: 700px;
+    }
+    .pdp {
+        width:400px;
+        height: 400px;
+        border-radius: 50%;
+        margin-top: 150px;
+    }
+    .nav-gauche{
+        width: 1400px;
+        height: 1400px;
+        left: -1400px!important;
+        top: -700px;
+        }
+        .cont-bloc {
+            height: 900px;
+            position: absolute;
+            left: 900px;
+            top:750px;
+        }
+        .menu-visible {
+            left: -700px!important;
+        }
+        .blocs-menu span {
+            font-size: 35px;
+        }
+}
+
 @media screen and (max-width: 1200px) {
     .pdp {
         margin-left: 100px;
@@ -220,12 +314,13 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
     .text-animation {
         font-size: 30px;
         padding-top: 20px;
+        font-size: 40px;
     }
     .pdp {
-        width: 200px;
+        width: 220px;
         height: 250px;
-        margin-top: 20px;
-        margin-left: 0px;
+        margin-top: 40px;
+        margin-left: 20px;
     }
     .btn-rond-menu {
         width: 100px;
@@ -244,8 +339,7 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 @media screen and (max-width: 550px) {
     
     .btn-rond {
-        width: 50px;
-        height: 50px;
+        display: none;
     }
     .nav-gauche{
         width: 600px;
@@ -292,6 +386,17 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
         width: 60px;
         height: 60px;
     }
+    .line-unique {
+        width: 50%;
+        height: 5px;}
+    .line-unique::before {
+            bottom: 10px;
+            height: 5px;
+         }
+     .line-unique::after {
+             top: 10px;
+             height: 5px;
+          }
     .nav-gauche{
         width: 500px;
         height: 500px;
@@ -321,10 +426,6 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
     }
     .accueil{
         padding-top: 0px;
-    }
-    .btn-rond {
-        width: 40px;
-        height: 40px;
     }
 }
 
@@ -893,7 +994,7 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
     grid-template-columns: repeat(auto-fill, 140px);
     grid-gap: 20px;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .card{
     height: 150px;
@@ -1006,5 +1107,20 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
     .contact-link{
         height: 80px;
         margin: auto;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .titre-contact{
+        font-size: 20px;
+        padding-top: 100px;
+    }
+    .contact-link{
+        height: 70px;
+        margin: auto;
+    }
+    .contact-container{
+        position: relative;
+        top: -50px;
     }
 }
