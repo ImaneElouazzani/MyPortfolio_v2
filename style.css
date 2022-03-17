@@ -443,6 +443,8 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
     .pdp{
         width: 180px;
         height: 200px;
+        margin-left: 0px;
+        margin-right: 30px;
     }
     .btn-rond-menu {
         width: 60px;
@@ -1143,6 +1145,9 @@ background: linear-gradient(90deg, rgba(194,242,225,0.8407738095238095) 0%, rgba
 }
 .contact-link{
     height: 100px;
+    margin: auto;
+}
+.linkcontact{
     margin: auto;
 }
 
